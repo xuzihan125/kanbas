@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Course Details</h2>
+<table>
+    <tr>
+        <th><a href="#"><b>Course Details</b></a></th>
+        <th><a href="#">Section</a></th>
+        <th><a href="/kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></th>
+        <th><a href="#">Apps</a></th>
+        <th><a href="#">Feature Options</a></th>
+        <th><a href="#">Integrations</a></th>
+    </tr>
+</table>
+<hr>
+<table border="1" width="100%">
+    <tbody>
+    <tr>
+        <th>Image:</th>
+        <th><button>Choose image</button></th>
+    </tr>
+    <tr>
+        <th>Name:</th>
+        <th>CS4550</th>
+    </tr>
+    <tr>
+        <th>Blueprint Course:</th>
+        <th>No</th>
+    </tr>
+    <tr>
+        <th>Course Templates:</th>
+        <th>
+            <input type="checkbox" id="template"/>
+            <label for="template">Enable course as a Course Template</label>
+        </th>
+    </tr>
+    <tr>
+        <th>Time Zone:</th>
+        <th>
+            <select>
+                <option selected> Eastern Time(US & Canada) (-05:00/-04:00)</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>SIS ID:</th>
+        <th>CS4550</th>
+    </tr>
+    <tr>
+        <th>Subaccount:</th>
+        <th>CS Undergrad</th>
+    </tr>
+    <tr>
+        <th>Term:</th>
+        <th>202410_1 Fall 2023 Semester Full Term</th>
+    </tr>
+    <tr>
+        <th>Participation:</th>
+        <th>
+            <select>
+                <option selected>Term</option>
+            </select>
+            <p>Course participation is limited to term start and end dates</p>
+            <h3>Start</h3>
+            <input type="date">
+            <h3>End</h3>
+            <input type="date">
+            <br>
+            <input type="checkbox" id="start_date"/>
+            <label for="start_date">Restrict students from viewing course before term start date</label>
+            <br>
+            <input type="checkbox" id="end_date"/>
+            <label for="end_date">Restrict students from viewing course before term end date</label>
+        </th>
+    </tr>
+    <tr>
+        <th>Dfault due time</th>
+        <th>
+            <select>
+                <option selected> Account default(11:59pm)</option>
+            </select>
+            <p>This influences the user interface for setting due dates. It foes not change the time due for any existing assignments</p>
+        </th>
+    </tr>
+    <tr>
+        <th>Language:</th>
+        <th>
+            <select>
+                <option selected> Not set(user-configurable, defaults to English(Unit)</option>
+            </select>
+            <p>This will overrided any user/system language preferences. This is only recommended for foreign language courses.</p>
+        </th>
+    </tr>
+    <tr>
+        <th>File Storage:</th>
+        <th>10000 megabytes</th>
+    </tr>
+    <tr>
+        <th>Large Course:</th>
+        <th>
+            <input type="checkbox" id="large_course"/>
+            <label for="large_course">Launch SpeedGrader Filtered byy Student Group</label>
+        </th>
+    </tr>
+    <tr>
+        <th>Grading Scheme:</th>
+        <th>
+            <input type="checkbox" id="grading"/>
+            <label for="grading">Enable course grading scheme</label>
+        </th>
+    </tr>
+    <tr>
+        <th>License:</th>
+        <th>
+            <select>
+                <option selected> Private(Copyrighted)</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>File Copyright:</th>
+        <th>
+            <input type="checkbox" id="file_copyright"/>
+            <label for="file_copyright">Copyright and license information must be provided for files before they are published</label>
+        </th>
+    </tr>
+    <tr>
+        <th>Visibility:</th>
+        <th>
+            <p>If you need to make youur course public please contact your administrator/support.</p>
+            <select disabled="disabled">
+                <option selected>Course</option>
+            </select>
+            <br>
+            <input type="checkbox" id="visibility" disabled="disabled"/>
+            <label for="visibility">include this course in the public course index</label>
+        </th>
+    </tr>
+    <tr>
+        <th>Format:</th>
+        <th>
+            <select>
+                <option selected>On-Campus</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>Mastery Paths:</th>
+        <th>
+            <input type="checkbox" id="paths"/>
+            <label for="paths">Enable individual learning paths for students based on assessment</label>
+        </th>
+    </tr>
+    </tbody>
+    <tr>
+        <th>Description:</th>
+        <th>
+            <input type="text">
+            <div>
+                more options
+            </div>
+        </th>
+
+    </tr>
+</table>
+<form action="/Kanbas/Courses/Home/screen.html" method="get">
+    <button>Update Course Details</button>
+</form>
+</body>
+</html>
