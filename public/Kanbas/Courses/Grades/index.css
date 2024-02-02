@@ -1,0 +1,45 @@
+.table thead {
+  background-color: #E5E4E2;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #E5E4E2;
+}
+
+tr, td {
+  text-align: center;
+}
+
+#left1, #left2 {
+  text-align: left
+;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+#left1, #left2 {
+  width: 20%;
+}
+
+#left2 {
+  color: red;
+}
+
+#center {
+  width: 20%;
+}
+
+
+#right {
+  text-align: right;
+}
+
+#center {
+  text-align: center;
+}
+
+.centered-input {
+  text-align: center;
+}

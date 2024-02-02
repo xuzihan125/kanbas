@@ -2,98 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>Title</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.css" rel="stylesheet">
+    <link href="/libs/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Kanbas/styles.css"/>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<table>
-    <tbody>
-    <tr>
-        <td>
-            <button>Collapse All</button>
-            <button>View Progress</button>
-            <select id="publish">
-                <option selected value="publish all">publish all</option>
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
+<div style="display: flex">
+    <div style="flex-basis: 60%; margin-top: 130px;">
+        <div class="float-end" style="text-align: right">
+            <button class="btn btn-secondary custom-btn">Collapse All</button>
+            <button class="btn btn-secondary custom-btn">View Progress</button>
+            <select class="btn btn-secondary custom-btn">
+                <option>Publish All</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
             </select>
-            <button>Module</button>
-            <ul>
-                <li>
-                    <h2>Week 0 - INTRO</h2>
-                    <ul>
-                        <li>
-                            <h3>LEARNING OBJECTIVES</h3>
-                            <ul>
-                                <li>Introduction to the course</li>
-                                <li>Learn what is Web Development</li>
-                                <li>Creating a development environment</li>
-                                <li>Creating a Web Application</li>
-                                <li>Getting started with 1st assignment</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>READING</h3>
-                            <ul>
-                                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>SLIDES</h3>
-                            <ul>
-                                <li><a href="index.html">slides 1</a></li>
-                                <li><a href="index.html">slides 2</a></li>
-                                <li><a href="index.html">slides 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Week 1 - HTML</h2>
-                    <ul>
-                        <li>
-                            <h3>LEARNING OBJECTIVES</h3>
-                            <ul>
-                                <li>Learn how to create user interfaces with HTML</li>
-                                <li>Keep working on assignment1</li>
-                                <li>Deploy the assignment to Netlify</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>READING</h3>
-                            <ul>
-                                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </td>
-        <td>
-            <h2>Course Status</h2>
-            <button>Unpublish</button>
-            <button>Published</button>
-            <ul>
-                <li><a href="index.html">Import Existing Content</a></li>
-                <li><a href="index.html">Import From Commons</a></li>
-                <li><a href="index.html">Choose Home Page</a></li>
-                <li><a href="index.html">View Course Stream</a></li>
-                <li><a href="index.html">New Announcement</a></li>
-                <li><a href="index.html">New Analytics</a></li>
-                <li><a href="index.html">View Course Notifications</a></li>
-            </ul>
-            <h2>Coming Up</h2>
-            <a href="index.html">View Calendar</a>
-            <ul>
-                <li><a href="index.html">Lecture CS4550.12631.202410 Sep 7 at 11.45am</a></li>
-                <li><a href="index.html">Lecture CS4550.12631.202410 Sep 7 at 11.45am</a></li>
-                <li><a href="index.html">Lecture CS4550.12631.202410 Sep 7 at 11.45am</a></li>
-            </ul>
-        </td>
-    </tr>
-    </tbody>
-</table>
+            <button class="btn btn-danger custom-btn"><i class="fas fa-plus"></i>&nbsp;&nbsp;Module</button>
+            <button class="btn btn-secondary" style="width:0.8cm"><b>⋮</b></button>
+        </div>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-secondary custom-grey-bg">
+                <div class="flex-container">
+                    Week 0 - INTRO
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex-container">
+                    LEARNING OBJECTIVES
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction to the course
+                    <div class="p-3">
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn what is Web
+                    Development
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a development
+                    envrionment
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a Web Application
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Getting started with the 1st
+                    assignment
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    READING
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full Stasck Developer -
+                    Chapter 1 - Introduction
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full Stasck Developer -
+                    Chapter 2 - Creating User Interfaces With HTML
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex-container">
+                    SLIDES
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3  my-link">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introuction to Web
+                    Development
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3; my-link">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating an HTTP server with
+                    Node.js
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item ms-3  my-link">
+                <div class="flex-container">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a React Application
+                    <div>
+                        <i class="fas fa-check-circle" style="color: #00a600;"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-v" style="color: #787878;"></i>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <ul>
+        <div style="flex-basis: 20%">
+            <div style="margin-top: 130px;">
+                <div>
+                    <h6>Course Status</h6>
+                    <div class="btn-group" style="margin-right: -5px;">
+                        <button class="btn btn-light btn-sm"><i class="fas fa-ban"></i>Unpublish</button>
+                        <button class="btn btn-success btn-sm"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                            Published
+                        </button>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">Import Existing Content</button>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">Import From Commons</button>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">Choose Home Page</button>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">View Course Stream</button>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">New Announcement</button>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">New Analytics</button>
+                    <br>
+                    <button class="btn btn-light btn-sm btn-consistent-width">View Course Notifications</button>
+                    <br>
+                    <br>
+                    To do
+                    <hr/>
+                    <div class="float-sm-end smaller-text"><a href="#" style="color: red;">Grade A1 - ENV + HTML </a>
+                    </div>
+                    <br>
+                    <br>
+                    Coming Up
+                    <hr/>
+                    <div class="float-sm-end smaller-text"><a href="#" style="color: red;">View Calendar</a></div>
+                    <hr/>
+
+                    <div class="item">
+                        Lecture<br/>
+                        CS4550.23123.23123<br/>
+                        Sep 5 at 11:45am<br/>
+                    </div>
+                    <br>
+                    <div class="item">
+                        Lecture<br/>
+                        CS4550.23123.23123<br/>
+                        Sep 5 at 11:45am<br/>
+                    </div>
+                    <br>
+                    <div class="item">
+                        Lecture<br/>
+                        CS5610.23211.32313<br/>
+                        Sep 6 at 12:45pm<br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>
 </body>
 </html>
