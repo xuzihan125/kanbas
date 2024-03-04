@@ -7,10 +7,13 @@ import {Navigate, Route, Routes} from "react-router";
 import Home from "./Home";
 import AssignmentEditor from "./Assignment/Editor";
 import Grades from "./Grades";
+import {Courses} from "../Database";
+import {useParams} from "react-router-dom";
 
 
-function Courses() {
-
+function CoursesPage({courses}:{courses:Courses[]}) {
+    const { courseId } = useParams();
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div style={{"display": "flex", "flexBasis": "20%", "flexDirection": "column"}}>
             <Routes>
@@ -40,4 +43,4 @@ function Courses() {
     )
 }
 
-export default Courses;
+export default CoursesPage;

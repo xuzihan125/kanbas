@@ -6,10 +6,16 @@ import {useParams} from "react-router";
 
 function ModuleList() {
     const {courseId} = useParams();
-    const modulesList = modules.filter((module) => module.course === courseId);
-    const [selectedModule, setSelectedModule] = useState(modulesList[0]);
+    const [moduleList, setModuleList] = useState(modules);
+    // const modulesList = modules.filter((module) => module.course === courseId);
+    const [selectedModule, setSelectedModule] = useState(moduleList[0]);
     const customBtnStyle = {height: '35px'};
     const buttonDimensions = {width: '0.8cm', height: '35px'};
+    const [module, setModule] = useState({
+        name: "New Module",
+        description: "New Description",
+        course: courseId,
+    });
 
     // @ts-ignore
     return (
@@ -33,7 +39,19 @@ function ModuleList() {
             <hr/>
             <br/>
             <ul className="list-group wd-modules">
-                {modulesList.map((module) => (
+                <li className="list-group-item">
+                    <button>Add</button>
+                    <input value={module.name}
+                           onChange={(e) => setModule({
+                               ...module, name: e.target.value })}
+                    />
+                    <textarea value={module.description}
+                              onChange={(e) => setModule({
+                                  ...module, description: e.target.value })}
+                    />
+                </li>
+
+                {moduleList.filter((module) => module.course === courseId).map((module) => (
                     <React.Fragment>
                         <li
                             className="list-group-item list-group-item-light custom-grey-bg"
